@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_bear"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/bear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/belajarangka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/img_bear"
+        android:fontFamily="@font/ceows"
+        android:text="Belajar \nAlpjabhet"
+        android:textColor="@color/hitam"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/img_bear"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tekan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/ceows"
+        android:text="Sentuh tombol panah \nuntuk abjad lainnya"
+        android:textAlignment="center"
+        android:textColor="@color/hitam"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/belajarangka" />
+
+
+    <ImageView
+        android:id="@+id/btnPrev"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/panahkiri"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_abjad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekan"/>
+
+    <ImageView
+        android:id="@+id/img_abjad"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/a"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekan"/>
+
+    <ImageView
+        android:id="@+id/btnNext"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/panahkanan"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_abjad"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekan"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

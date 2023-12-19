@@ -1,0 +1,69 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroungbangundatar"
+    tools:context=".ui.WarnaActivity">
+
+    <FrameLayout
+        android:id="@+id/container_bangun"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cl_warna2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_warna2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Putih"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_rumah"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/Putih"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/cl_warna2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/house" />
+
+        <ImageButton
+            android:id="@+id/btn_games"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@color/Putih"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/cl_warna2"
+            app:layout_constraintEnd_toStartOf="@+id/btn_exit"
+            app:layout_constraintStart_toEndOf="@id/btn_rumah"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gamepad" />
+
+
+        <ImageButton
+            android:id="@+id/btn_exit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/Putih"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

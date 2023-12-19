@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_bear"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/bear" />
+
+        <TextView
+            android:id="@+id/txtBear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="55dp"
+            android:layout_toEndOf="@+id/img_bear"
+            android:fontFamily="@font/ceows"
+            android:text="@string/ayo_belajar_nbersama_bena"
+            android:textColor="@color/hitam"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/txt_pilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_bear"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="40sp"
+            android:fontFamily="@font/ceows"
+            android:text="@string/pilih_permainan_mu"
+            android:textColor="@color/hitam"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_warna"
+            android:layout_width="118dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/txt_pilih"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custum_button"
+            android:elevation="4dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/warna2" />
+
+        <TextView
+            android:id="@+id/txt_warna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_warna"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ceows"
+            android:text="@string/bermain_warna"
+            android:textColor="@color/hitam"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_bentuk"
+            android:layout_width="118dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/txt_warna"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/custum_button"
+            android:backgroundTint="#F9EFC2"
+            android:elevation="4dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/kubus2" />
+
+        <TextView
+            android:id="@+id/txt_kubus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_bentuk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ceows"
+            android:text="@string/bermain_bentuk"
+            android:textColor="@color/hitam"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_angka"
+            android:layout_width="118dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/txt_kubus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/custum_button"
+            android:backgroundTint="#F9DCDE"
+            android:elevation="4dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/angka2" />
+
+        <TextView
+            android:id="@+id/txt_angka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_angka"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ceows"
+            android:text="@string/bermain_angka"
+            android:textColor="@color/hitam"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_huruf"
+            android:layout_width="118dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/txt_angka"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/custum_button"
+            android:backgroundTint="#B0F1AD"
+            android:elevation="4dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/abcd2" />
+
+        <TextView
+            android:id="@+id/txt_huruf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_huruf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ceows"
+            android:text="@string/bermain_huruf"
+            android:textColor="@color/hitam"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCamera"
+            android:layout_width="118dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/txt_huruf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            app:cardBackgroundColor="#2492D1"
+            app:cardCornerRadius="18dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/camera"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_camera"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCamera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ceows"
+            android:text="@string/kamera_pintar"
+            android:textColor="@color/hitam"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>
